@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+section{
+  position: absolute;
+  width:100%;
+  height:100%;
+}
+
+h1{
+  color:#fe6a30;
+  font-size:28px;
+  margin-bottom:8px;
+}
+
+.instruction{
+  color:#fe6a30;
+  padding:12px;
+}
+
+.cortinaLink{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  margin:10px;
+  color:white;
+}
+
+@media only screen and (max-height: 500px) {
+  .cortinaLink {
+    display:none;
+  }
+}
+
+.loadingPrompt{
+  color:white;
+  display: flex;
+  height:100vh;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+
+.panel{
+    width: 60%;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 20px #00000066);
+    padding:20px;
+    flex-shrink: 0;
+}
