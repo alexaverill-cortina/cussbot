@@ -9,5 +9,5 @@ RUN pip3 install -r requirements.txt
 # copy python project files from local to /hello-py image working directory
 COPY . .
 
-# run the flask server  
-CMD [ "python3", "application.py"]
+# run the flask server with gunicorn
+CMD [ "gunicorn", "--bind", "0.0.0.0:3333", "application:application"]
